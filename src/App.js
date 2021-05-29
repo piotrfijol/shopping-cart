@@ -12,7 +12,9 @@ function App() {
           <li>
             <div className="navbar__link__burger">
               <input id="burger-menu" type="checkbox"/>
-              <label htmlFor="burger-menu"></label>
+              <label htmlFor="burger-menu">
+                <div></div>
+              </label>
             </div>
           </li>
         </ul>
