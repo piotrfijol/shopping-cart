@@ -1,6 +1,7 @@
 
 import { GoogleApiWrapper } from 'google-maps-react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/style.css';
 import MapContainer from './MapContainer';
 
@@ -14,7 +15,7 @@ function Homepage() {
                     <p>THE BEST PRICES</p>                
                 </div>
                 <div className="welcome-section__btn">
-                    <button>Go shopping</button>
+                <Link to="/shop"><button>Go shopping</button></Link>
                 </div>
             </div>
             <div className="section about">

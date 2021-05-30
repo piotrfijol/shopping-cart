@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="container">
-      <Navbar cart={cart}/>
       <BrowserRouter>
+        <Navbar cart={cart}/>
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/shop">

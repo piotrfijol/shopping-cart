@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Navbar.css';
+import {Link} from 'react-router-dom';
 
 function Navbar(props) {
 
@@ -7,8 +8,8 @@ function Navbar(props) {
         <React.Fragment>
             <div className="navbar">
                 <ul>
-                    <li><a className="navbar__link" href="/">Home</a></li>
-                    <li><a className="navbar__link" href="/shop">Shop</a></li>
+                    <li><Link className="navbar__link" to="/">Home</Link></li>
+                    <li><Link className="navbar__link" to="/shop">Shop</Link></li>
                     <li><a className="navbar__link" href="#">About us</a></li>
                     <li><a className="navbar__link" href="#"><i class="fas fa-shopping-cart"></i>
                     <div className="navbar__link__cart-items"><span>{props.cart.length}</span></div></a></li>
@@ -20,7 +21,7 @@ function Navbar(props) {
                     <li><a href="" className="mobile-navbar__link"><i class="fas fa-info-circle"></i></a></li>
                     <li><a href="" className="mobile-navbar__link">
                     <i class="fas fa-shopping-cart"></i>
-                    <div className="mobile-navbar__link__cart-items"><span>50</span></div></a>
+                    <div className="mobile-navbar__link__cart-items"><span>{props.cart.length}</span></div></a>
                     </li>
                     <li>
                     <div className="mobile-navbar__link__burger">

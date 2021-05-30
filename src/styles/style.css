@@ -8,6 +8,7 @@
 .welcome-section {
   width: 100vw;
   height: 100vh;
+  min-height: 800px;
   background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
   background-size: cover;
   background-position: 20%;
@@ -109,6 +110,9 @@ footer p {
     max-width: 30%;
     display: flex;
     align-items: center;
+  }
+  footer {
+    height: 7em;
   }
 }
 

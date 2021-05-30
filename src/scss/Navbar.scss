@@ -20,7 +20,12 @@ $icon: #db402f;
     font-weight: 600;
 }
 
+.navbar {
+    display: none;
+}
+
 .mobile-navbar {
+    z-index: 100;
     background-color: #FFF;
     font-size: 32px;
     width: 100vw;
@@ -113,6 +118,7 @@ $icon: #db402f;
 
 @media only screen and (min-width: 800px) {
 
+
     .mobile-navbar {
         display: none;
     }
@@ -121,6 +127,7 @@ $icon: #db402f;
         top: 0;
         height: 5em;
         width: 100%;
+        display: block;
         background-color: #000;
     
     
@@ -177,7 +184,4 @@ $icon: #db402f;
         }
     }
 
-    footer {
-        height: 6em;
-    }
 }

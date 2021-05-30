@@ -20,8 +20,8 @@ function ProductCard({data: product, onAdd}) {
                         {product.description}
                     </p>
                     <div className="product__action-buttons">
-                        <button onClick={onAdd} className="product__action-buttons__buy btn">Buy</button>
-                        <button className="product__action-buttons__add btn">Add to cart</button>
+                        <button className="product__action-buttons__buy btn">Buy</button>
+                        <button onClick={onAdd} className="product__action-buttons__add btn">Add to cart</button>
                     </div>
                 </div>
             </div>
