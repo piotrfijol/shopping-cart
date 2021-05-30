@@ -1,0 +1,94 @@
+/* Variables */
+.navbar {
+  background-color: #FFF;
+  font-size: 32px;
+  width: 100vw;
+  height: 3em;
+  position: fixed;
+  bottom: 0;
+}
+.navbar__link {
+  color: #db402f;
+  position: relative;
+}
+.navbar__link__cart-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 0.4em;
+  width: 1.8em;
+  height: 1.7em;
+  border: 3px solid #db402f;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1.2em;
+  right: -1.2em;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.navbar__link__burger {
+  width: 1em;
+  height: 1em;
+  padding-top: 0.1em;
+}
+.navbar__link__burger label {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.navbar__link__burger label div {
+  height: 0.15em;
+  width: 100%;
+  display: block;
+  background-color: #db402f;
+  cursor: pointer;
+  transform-origin: left;
+  transform: translateY(0.35em);
+}
+.navbar__link__burger label div::before, .navbar__link__burger label div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  display: block;
+}
+.navbar__link__burger label div::before {
+  transform: translateY(-0.35em);
+}
+.navbar__link__burger label div::after {
+  transform: translateY(0.25em);
+}
+.navbar__link__burger {
+  position: relative;
+}
+.navbar__link__burger input[type=checkbox] {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.navbar__link__burger input[type=checkbox]:checked + label div::before {
+  visibility: hidden;
+}
+.navbar__link__burger input[type=checkbox]:checked + label div {
+  transition-duration: 0.3s;
+  transform: rotate(45deg);
+}
+.navbar__link__burger input[type=checkbox]:checked + label div::after {
+  transition-duration: 0.3s;
+  transform: rotate(-90deg) translateX(0.13em);
+}
+.navbar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=Navbar.css.map */
