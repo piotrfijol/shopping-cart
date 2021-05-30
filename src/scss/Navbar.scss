@@ -2,7 +2,25 @@
 
 $icon: #db402f;
 
-.navbar {
+@mixin cart-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: .4em;
+    width: 1.8em;
+    height: 1.7em;
+    border: 3px solid $icon;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.2em;
+    right: -1.2em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.mobile-navbar {
     background-color: #FFF;
     font-size: 32px;
     width: 100vw;
@@ -15,21 +33,7 @@ $icon: #db402f;
         position: relative;
 
         &__cart-items {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            font-size: .4em;
-            width: 1.8em;
-            height: 1.7em;
-            border: 3px solid $icon;
-            border-radius: 50%;
-            position: absolute;
-            bottom: -1.2em;
-            right: -1.2em;
-            text-align: center;
-            font-family: sans-serif;
-            font-weight: 600;
+            @include cart-items;
         }
 
         &__burger {
@@ -105,4 +109,75 @@ $icon: #db402f;
         list-style-type: none;
     }
 
+}
+
+@media only screen and (min-width: 800px) {
+
+    .mobile-navbar {
+        display: none;
+    }
+    
+    .navbar {
+        top: 0;
+        height: 5em;
+        width: 100%;
+        background-color: #000;
+    
+    
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 0;
+            margin-right: 2em;
+            list-style: none;
+        }
+    
+        &__link {
+            display: block;
+            min-width: 5em;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            margin-left: 1em;
+            position: relative;
+
+            i {
+                font-size: 24px;
+            }
+
+
+            &__cart-items {
+                @include cart-items;
+                right: 1em;
+                bottom: em;
+                font-size: 14px;
+            }
+        }
+    
+        &__link:last-child:hover::after {
+            width: 0;
+        }
+
+        &__link::after {
+            content: '';
+            background-color: #FFF;
+            display: block;
+            height: 1px;
+            width: 0%;
+            margin: auto;
+            margin-top: .3em;
+            transition: width .1s ease-out;
+        }
+    
+        &__link:hover::after {
+            transition-duration: .3s;
+            width: 100%;
+        }
+    }
+
+    footer {
+        height: 6em;
+    }
 }

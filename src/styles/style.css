@@ -11,8 +11,24 @@
   background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
   background-size: cover;
   background-position: 20%;
-  padding-top: 9em;
+  padding-top: 16em;
   display: block;
+}
+.welcome-section__btn {
+  text-align: center;
+  margin-top: 3em;
+}
+.welcome-section__btn button {
+  padding: 1em 3em;
+  border: 2px solid #FFF;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.welcome-section__btn button:hover {
+  transition-duration: 0.3s;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #FFF;
 }
 .welcome-section__frame {
   margin: auto;
@@ -30,7 +46,6 @@
 
 .section {
   width: 100vw;
-  min-height: 85vh;
   font-family: Roboto, sans-serif;
 }
 .section__wrapper {
@@ -50,6 +65,7 @@
   width: 80%;
   margin: auto;
   margin-top: 2em;
+  line-height: 1.4em;
 }
 .section__wrapper__container__content {
   color: #FFF;
@@ -78,6 +94,22 @@ footer {
 }
 footer p {
   font-family: Roboto;
+}
+
+@media only screen and (min-width: 800px) {
+  .section__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section__wrapper > div:first-child {
+    width: 40%;
+  }
+  .section__wrapper__img {
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+
+.product {
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    width: 45em;
+    border-radius: 12px;
+    padding: 2em;
+    box-shadow: 1px 1px 5px 1px #999;
+
+    &__thumbnail img {
+        width: 150px;
+    }
+    
+    &__description {
+        
+        &__header {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 1em;
+
+        }
+    }
+
+    &__action-buttons {
+        display: flex;
+        justify-content: flex-end;
+
+        &__buy {
+            background-color: rgb(74, 184, 93);
+            color: #FFF;
+        }
+
+        &__add {
+            background-color: rgb(206, 89, 60);
+            color: #FFF;
+            margin-left: 1.5em;
+        }
+    }
+    
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    padding: 1em 4em;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
