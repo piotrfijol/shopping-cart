@@ -3,28 +3,21 @@
         "id": "a362b",
         "name": "Computer",
         "price": 3600,
-        "thumbnail": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
+        "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/819XYUimTuL._AC_SL1500_.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus ultricies tellus vitae suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae"
     },
     {
-        "id": "a362b",
-        "name": "Computer",
+        "id": "a312b",
+        "name": "Laptop",
         "price": 3600,
         "thumbnail": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus ultricies tellus vitae suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae"
     },
     {
-        "id": "a362b",
-        "name": "Computer",
+        "id": "a384b",
+        "name": "TV",
         "price": 3600,
-        "thumbnail": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus ultricies tellus vitae suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae"
-    },
-    {
-        "id": "a362b",
-        "name": "Computer",
-        "price": 3600,
-        "thumbnail": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg",
+        "thumbnail": "https://www.lg.com/lk/images/tvs/md07514162/gallery/43lm5500pta-ultra-hd-tvs-dm-01.jpg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus ultricies tellus vitae suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae"
     }
 ]

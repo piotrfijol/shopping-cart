@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Item({product, setQuantity}) {
+function Item({product, setQuantity, onRemove}) {
 
     const handleOnChange = e => {
         setQuantity(product.id, e.target);
@@ -24,15 +24,17 @@ function Item({product, setQuantity}) {
                     <p className="shopping-cart__product__description__header__title">{product.name}</p>
                     <p className="shopping-cart__product__description__header__price">${product.price}</p>
                 </div>
-            </div>
-            <div className="shopping-cart__product__quantity">
-                <button className="decrease" onClick={handleDecrease}>-</button>
-                <input type="number" value={product.quantity} onChange={handleOnChange}/>
-                <button className="increase" onClick={handleIncrease}>+</button>
-            </div>
-            <div className="shopping-cart__product__remove">
-                <button>Remove</button>
-            </div>
+
+                <div className="shopping-cart__product__description__quantity">
+                    <button className="decrease btn" onClick={handleDecrease}>-</button>
+                    <input type="number" value={product.quantity} onChange={handleOnChange}/>
+                    <button className="increase btn" onClick={handleIncrease}>+</button>
+                </div>
+
+                <div className="shopping-cart__product__description__remove">
+                    <button onClick={onRemove.bind(null, product)} className="btn">Remove</button>
+                </div>
+                </div>
         </div>
     );
 }

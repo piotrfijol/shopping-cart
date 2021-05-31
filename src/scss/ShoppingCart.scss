@@ -6,7 +6,6 @@
     width: 45em;
     min-height: 20em;
     border-radius: 12px;
-    padding: 2em;
     box-shadow: 1px 1px 5px 1px #999;
 
     &__product {
@@ -31,8 +30,41 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 1em;
+            }
 
+            &__quantity {
+                margin-top: 1.5em;
 
+                .btn {
+                    display: inline-block !important;
+                    padding: 1em 1.5em;
+                    color: #FFF;
+                    font-weight: 600;
+                }
+
+                input {
+                    padding: .5em;
+                    width: 3em;
+                    margin: 0 .5em;
+                }
+
+                .decrease {
+                    background-color: rgb(206, 89, 60);
+                }
+
+                .increase {
+                    background-color: rgb(74, 184, 93);
+                }
+            }
+
+            &__remove {
+                display:flex;
+                justify-content: flex-end;
+
+                .btn {
+                    background-color: #333;
+                    color: #FFF;
+                }
             }
         }
     }

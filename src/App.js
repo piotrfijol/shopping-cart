@@ -19,7 +19,10 @@ function App() {
         if(product.id === productId) 
           id = index;
       });
-      setCart( cart => 
+      if(quantityAmount < 0)
+        removeFromCart(cart[id]);
+      else
+        setCart( cart => 
       [...cart.slice(0, id).concat({...cart[id], quantity: quantityAmount}, ...cart.slice(id+1))]);
     } else {
       throw new Error("Product ID not found");
@@ -60,7 +63,7 @@ function App() {
             />
         </Route>
           <Route path="/shopping-cart">
-            <ShoppingCart products={cart} setQuantity={setQuantity}/>
+            <ShoppingCart products={cart} setQuantity={setQuantity} onRemove={removeFromCart}/>
         </Route>
         </Switch>
       </BrowserRouter>

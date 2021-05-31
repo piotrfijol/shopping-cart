@@ -17,11 +17,11 @@ function Navbar(props) {
             </div>
             <div className="mobile-navbar">
                 <ul>
-                    <li><a href="" className="mobile-navbar__link"><i class="fas fa-home"></i></a></li>
-                    <li><a href="" className="mobile-navbar__link"><i class="fas fa-info-circle"></i></a></li>
-                    <li><a href="" className="mobile-navbar__link">
+                    <li><Link to="/" className="mobile-navbar__link"><i class="fas fa-home"></i></Link></li>
+                    <li><Link to="/shop" className="mobile-navbar__link"><i class="fas fa-tag"></i></Link></li>
+                    <li><Link to="/shopping-cart" className="mobile-navbar__link">
                     <i class="fas fa-shopping-cart"></i>
-                    <div className="mobile-navbar__link__cart-items"><span>{props.cart.length}</span></div></a>
+                    <div className="mobile-navbar__link__cart-items"><span>{props.cart.length}</span></div></Link>
                     </li>
                     <li>
                     <div className="mobile-navbar__link__burger">
