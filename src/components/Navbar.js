@@ -11,8 +11,8 @@ function Navbar(props) {
                     <li><Link className="navbar__link" to="/">Home</Link></li>
                     <li><Link className="navbar__link" to="/shop">Shop</Link></li>
                     <li><a className="navbar__link" href="#">About us</a></li>
-                    <li><a className="navbar__link" href="#"><i class="fas fa-shopping-cart"></i>
-                    <div className="navbar__link__cart-items"><span>{props.cart.length}</span></div></a></li>
+                    <li><Link className="navbar__link" to="/shopping-cart"><i class="fas fa-shopping-cart"></i>
+                    <div className="navbar__link__cart-items"><span>{props.cart.length}</span></div></Link></li>
                 </ul>
             </div>
             <div className="mobile-navbar">

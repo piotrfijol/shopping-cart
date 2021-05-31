@@ -1,7 +1,6 @@
 import ProductCard from './ProductCard';
-import data from './data.json';
 
-function Shop({onAdd}) {
+function Shop({onAdd, data}) {
     return (
         <>
         {data.map(el => {

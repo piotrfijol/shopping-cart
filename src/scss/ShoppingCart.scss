@@ -1,0 +1,39 @@
+.shopping-cart {
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+    min-height: 20em;
+    border-radius: 12px;
+    padding: 2em;
+    box-shadow: 1px 1px 5px 1px #999;
+
+    &__product {
+        border: 1px solid #999;
+        padding: 1em;
+        display: flex;
+        
+
+        &__thumbnail img{
+            width: 200px;
+        }
+
+    
+        &__description {
+            width: 100%;
+            
+            &__header {
+                font-size: 24px;
+                font-weight: 600;
+                font-family: sans-serif;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 1em;
+
+
+            }
+        }
+    }
+}
